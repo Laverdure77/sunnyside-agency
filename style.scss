@@ -1,0 +1,33 @@
+@import 'main';
+@import 'resetcss';
+
+
+body{
+
+    
+    width: 100%;
+    background-color:yellowgreen;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    background-image: url('');
+
+}
+header,
+main,
+footer
+{
+    margin: 0 auto ;
+    width: 780px;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid $border-test;
+    
+    
+}
+
+.image-header{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
