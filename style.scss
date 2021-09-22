@@ -5,7 +5,8 @@
 
 body
 {
-    width: 100%;
+    width: 1440px;
+    margin: 0 auto;
     /* background-color: salmon; */
     /* display: flex;
     flex-direction: column;
@@ -20,7 +21,6 @@ main,
 footer
 {
     margin: 0 auto ;
-    width: 900px;
     height: auto;
     box-sizing: border-box;
     border: 1px solid $border-test;
@@ -29,53 +29,151 @@ footer
 
 header{
     background-image: url('images/photos/image-header.jpg');
-    height: 500px;
-    width: 900px;
+    height: 700px;
+    width: 1440px;
     background-size: cover;
     background-position-x: center;
+    img{
+        padding: 50px;
+    }
+    h1{
+        text-align: center;
+        font-size: xx-large;
+        padding: 100px;
+        
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            padding-bottom: 20px;
+        }
+        li+li{
+            padding-left: 20px;
+        }
+        li:last-of-type{
+            padding-right: 50px;
+        }
+    }
+    
+    .down-arrow{
+        position: relative;
+        padding: 0px;
+        top: -50px;
+        left: 695px;
+
+    }
+    
+    a:hover{
+        background-color: white;
+    }
 
 }
 
 .middle{
-    
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    article{
+
+    article {
 
         width: 50%;
-        height: auto;
+        height: 600px;
         box-sizing: border-box;
         border: 1px solid $border-test;
+        p{
+            text-align: center;
+            color:saddlebrown;
+        }
     }
-    img{
-        height: auto;
-        width: 50%;
+    img {
+        height: 600px;
+        width: 100%;
         border: 1px solid $border-test;
     }
-}
-
-.testimonials{
-    border: seagreen;
-    h4{
-        text-align: center;
-        color: $dark-grayish-blue;
-        font-size: $font-body;
-
+    .bottom-left {
+        width: 50%;
+        height: 600px;
+        background-image: url('./images/photos/image-graphic-design.jpg');
+        background-size: cover;
+        background-position-x: center;
     }
-    li{
-        
-        h4{
-            color: $dark-grayish-blue;
-            
-        }
+    .bottom-right {
+        width: 50%;
+        height: 600px;
+        background-image: url('./images/photos/image-photography.jpg');
+        background-size: cover; 
+        background-position-x: center; 
     }
     
 }
+.testimonials{
+    box-sizing: border-box;
+    border: 5px solid seagreen;
+    h4{
+        text-align: center;
+        color: $dark-grayish-blue;
+        font-size: $body-size;
+        padding: 20px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                border-radius: 50%;
+            }
 
+        }
+    }
+}
 
-/* .image-header{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} */
+.footer-top{
+
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 360px;
+    }
+}
+.footer-bottom{
+
+    height: 300px;
+    background-color: $footer;
+    padding: 50px, 200px;
+    
+        display: flex;
+        flex-direction: column;
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 50px;
+        }
+        ul{
+            margin: 0 auto;
+            display: flex;
+            padding: 20px;
+            
+            a{
+                text-decoration: none;
+            }
+            
+        }
+        .social-media{
+            
+            li + li{
+                padding-left: 30px;
+            }
+        }
+        .contact{
+            li + li{
+                padding-left: 20px;
+            }
+        }
+    }
