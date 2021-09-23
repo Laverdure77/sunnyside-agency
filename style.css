@@ -257,9 +257,28 @@ header a:hover {
   border: 1px solid none;
 }
 
+.middle article h2 {
+  margin: 0 auto;
+  padding: 20px;
+  font-size: xx-large;
+  text-align: left;
+  text-justify: distribute;
+}
+
 .middle article p {
-  text-align: center;
+  padding: 30px 20px;
+  text-align: left;
   color: saddlebrown;
+}
+
+.middle article a {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.middle .top-left {
+  padding-left: 100px;
+  padding-top: 100px;
 }
 
 .middle img {
@@ -287,7 +306,7 @@ header a:hover {
 .testimonials {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 5px solid seagreen;
+  border: 5px solid #a0a0a0;
 }
 
 .testimonials h4 {
@@ -317,6 +336,7 @@ header a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10px;
 }
 
 .testimonials ul li img {
@@ -339,7 +359,7 @@ header a:hover {
 
 .footer-bottom {
   height: 300px;
-  background-color: #458c7e;
+  background-color: #73ddc9;
   padding: 50px, 200px;
   display: -webkit-box;
   display: -ms-flexbox;

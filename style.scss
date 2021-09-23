@@ -82,10 +82,28 @@ header{
         height: 600px;
         box-sizing: border-box;
         border: 1px solid $border-test;
+        h2{
+            margin: 0 auto;
+            padding: 20px;
+            font-size: xx-large;
+            text-align: left;
+            text-justify: distribute;
+            
+            
+        }
         p{
-            text-align: center;
+            padding: 30px 20px;
+            text-align: left;
             color:saddlebrown;
         }
+        a{
+            padding: 20px;
+            text-decoration: none;
+        }
+    }
+    .top-left{
+        padding-left: 100px;
+        padding-top: 100px;
     }
     img {
         height: 600px;
@@ -110,7 +128,7 @@ header{
 }
 .testimonials{
     box-sizing: border-box;
-    border: 5px solid seagreen;
+    border: 5px solid rgb(160, 160, 160);
     h4{
         text-align: center;
         color: $dark-grayish-blue;
@@ -120,11 +138,13 @@ header{
     ul{
         display: flex;
         justify-content: space-around;
+        
         li{
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 10px;
             img{
                 border-radius: 50%;
             }
@@ -144,7 +164,7 @@ header{
 .footer-bottom{
 
     height: 300px;
-    background-color: $footer;
+    background-color: $footer-bottom;
     padding: 50px, 200px;
     
         display: flex;
